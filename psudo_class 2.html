@@ -1,0 +1,63 @@
+<!-- pseudoclass focus first child, last child, nth child, visited -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child and visited</title>
+
+    <style>
+        input:focus {
+            font-weight: 700;
+            font-style: 20px;
+            color: green;
+        }
+        /*         li:first-child {
+            background-color: brown;
+        }
+
+        li:last-child {
+            background-color: indianred;
+        } */
+        /*         li:nth-child(2n) {
+            background-color: indianred;
+        } */
+        
+        li:nth-child(2n+1) {
+            background-color: indianred;
+        }
+        
+        a:visited {
+            color: rgb(255, 136, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <input name="email" type="text">
+    <br>
+    <input name="password" type="text">
+
+    <br>
+    <a terget="_blank" href="https://www.youtube.com/">Youtube</a>
+    <br>
+    <a terget="_blank" href="https://www.facebook.com/">Facebook</a>
+    <br>
+    <a terget="_blank" href="https://www.facebook.co/">Facebook</a>
+
+
+    <ul>
+        <li>Alia</li>
+        <li>Dalia</li>
+        <li>Malia</li>
+        <li>Salia</li>
+        <li>Falia</li>
+        <li>Jalaiya</li>
+        <li>jon</li>
+    </ul>
+
+</body>
+
+</html>
