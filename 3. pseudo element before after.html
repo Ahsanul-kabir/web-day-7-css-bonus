@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bedore-after</title>
+
+    <style>
+        h1::before {
+            content: "hello";
+            color: rgb(15, 15, 15);
+            font-size: 30px;
+            background-color: antiquewhite;
+        }
+        
+        h1::after {
+            content: " Bye";
+            color: rgb(252, 5, 5);
+            font-size: 30px;
+            background-color: rgb(233, 201, 159);
+        }
+        
+        body {
+            counter-reset: variable;
+        }
+        
+        p::before {
+            counter-increment: variable;
+            content: "Crush" counter(variable) ": ";
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="special-effect">Pseudo Class</h1>
+    <h1 class="special-effect">Normal Class</h1>
+    <h1>Vodro Class</h1>
+
+    <p>Alia</p>
+    <p>Dalia</p>
+    <p>Malia</p>
+    <p>Salia</p>
+    <p>Falia</p>
+    <p>Jalaiya</p>
+    <p>jon</p>
+</body>
+
+</html>
