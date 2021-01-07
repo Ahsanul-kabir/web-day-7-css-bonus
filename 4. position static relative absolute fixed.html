@@ -1,0 +1,100 @@
+<!-- positions:
+1.static (By default)
+2. relative
+3. absolute -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position static relative absolute fixed</title>
+
+    <style>
+        .container-1 {
+            background-color: lightblue;
+            margin-bottom: 20px;
+        }
+        
+        .container-2 {
+            background-color: rgb(221, 230, 173);
+        }
+        
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+        }
+        
+        #first {
+            background-color: forestgreen;
+        }
+        
+        #second {
+            background-color: greenyellow;
+            /* position: relative; */
+            /* relative = jei jaigai thakar ktha oi
+            jaiga theke koto tutu sore gase --->> nijer obostan er tulonai*/
+            position: fixed;
+            /* jei jaigai ase oi jaigai fixed thakbo */
+            left: 100px;
+        }
+        
+        #third {
+            background-color: hotpink;
+        }
+        
+        #first1 {
+            background-color: rgb(36, 34, 139);
+        }
+        
+        #second1 {
+            background-color: rgb(153, 250, 7);
+            position: absolute;
+            /*   absolute = (eita hoy parent er under e)
+            nijer jaigai nije nah thakle onno ta aisa bose jabe
+            likes, Headmaster job cari dile onno Sir Headmaster hobe */
+            left: 100px;
+        }
+        
+        #third1 {
+            background-color: rgb(248, 115, 6);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Learning and climbing Position High</h1>
+    </section>
+
+    <h1>Relative & Fixed</h1>
+    <section class="container-1">
+        <div id="first"></div>
+        <div id="second"></div>
+        <div id="third"></div>
+    </section>
+
+    <h1>Absolute</h1>
+    <section class="container-2">
+        <div id="first1"></div>
+        <div id="second1"></div>
+        <div id="third1"></div>
+    </section>
+
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+
+</html>
