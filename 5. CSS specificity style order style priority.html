@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS specificity style order style priority</title>
+
+    <style>
+        #Nayeem {
+            color: darkgoldenrod;
+        }
+        
+        .name {
+            color: darkorange;
+            font-size: 50px;
+            /* font-size: 50px;   --> ekhon ei css use korle
+            powe besi onujai color pabe and font-size:50px ei ta o pabe  sudu*/
+        }
+        
+        h1 {
+            color: brown;
+            /* color: brown !important; --> then ei tar power besi hoi jbe Sob gular theke*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--     power besi likes,
+    inline css > id > class > tag -->
+    <h1 style="color: blueviolet" id=" Nayeem " class="name "> Hello I'm Nayeem</h1>
+</body>
+
+</html>
